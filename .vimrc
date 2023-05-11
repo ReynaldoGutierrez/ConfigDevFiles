@@ -23,20 +23,22 @@ call plug#end()
 nnoremap<C-p> :Files <CR>
 nnoremap <SPACE> <Nop>
 let mapleader = " "
+set spell
+set number
+set rnu
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
 noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
 colorscheme gruvbox
-set number
 filetype plugin indent on
 syntax on
 let g:ragtag_global_maps=1
 set shiftwidth=2
 set autoindent
 set smartindent
-
-au VimEnter * NERDTree
 
 autocmd FileType html,eruby
 set omnifunc=htmlcomplete#CompleteTags
